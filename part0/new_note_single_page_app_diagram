@@ -1,0 +1,9 @@
+sequenceDiagram
+participant browser
+participant server
+
+browser->>server: POST : https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+activate server
+note right of server: creation of the new resource
+server->>browser: resource send in html document
+deactivate server
